@@ -51,18 +51,16 @@ function mocnina(x, exponent) {
     return Math.pow(x, exponent);
 }
 
-Devátá: Získání kořene z čísla
+Devátá: Kladné a záporné číslo 
 
-function koren(x) {
-    return Math.sqrt(x);
-}
-
-Desátá: Získání faktoriálu čísla
-
-function faktorial(n) {
-    if (n === 0 || n === 1) {
-        return 1;
+function zjistiZnamenko(cislo) {
+    if (cislo > 0) {
+        return "Kladné";
+    } else if (cislo < 0) {
+        return "Záporné";
     } else {
-        return n * faktorial(n - 1);
+        return "Nula";
     }
 }
+
+Desátá: Záporné číslo
