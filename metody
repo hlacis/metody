@@ -1,0 +1,68 @@
+První: Součet dvou čísel
+
+function secti(a, b) {
+    return a + b;
+}
+
+Druhá: Rozdíl dvou čísel
+
+function odecti(a, b) {
+    return a - b;
+}
+
+Třetí: Násobení dvou čísel
+
+function nasob(a, b) {
+    return a * b;
+}
+
+Čtvrtá: Dělení dvou čísel
+
+function del(a, b) {
+    if (b !== 0) {
+        return a / b;
+    } else {
+        return "Nelze dělit nulou";
+    }
+}
+
+Pátá: Získání absolutní hodnoty čísla
+
+function absolutniHodnota(x) {
+    return Math.abs(x);
+}
+
+Šestá: Generování náhodného čísla v určeném rozsahu
+
+function nahodneCislo(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+Sedmá: Získání průměru pole čísel
+
+function prumer(pole) {
+    const sum = pole.reduce((a, b) => a + b, 0);
+    return sum / pole.length;
+}
+
+Osmá: Umocňování čísla na zadanou mocninu
+
+function mocnina(x, exponent) {
+    return Math.pow(x, exponent);
+}
+
+Devátá: Získání kořene z čísla
+
+function koren(x) {
+    return Math.sqrt(x);
+}
+
+Desátá: Získání faktoriálu čísla
+
+function faktorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * faktorial(n - 1);
+    }
+}
